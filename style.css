@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #eef4ff;
@@ -6,14 +10,18 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 15px; /* Adds spacing around the screen on mobile devices */
 }
 
 .container {
     background: #ffffff;
-    padding: 30px 25px;
+    padding: 30px 20px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    width: 360px;
+    
+    /* Responsive width settings for mobile screens */
+    width: 90%;
+    max-width: 400px;
 }
 
 h1 {
@@ -120,5 +128,5 @@ input[type="checkbox"] {
 }
 
 .delete-btn:hover {
-    background-color: yellow;
+    background-color: #fee2e2;
 }
